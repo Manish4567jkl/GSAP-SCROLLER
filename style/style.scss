@@ -30,8 +30,8 @@ body,html{
         position: absolute;
         top: 50%;
         left: -100vh;
-        transform: translate(0,-50%);
-        border: 3px solid #dada;
+        transform: translate(0,-50%) rotate(100deg);
+        border: 3px solid #dadada;
        
 
         .stripe{
@@ -72,12 +72,25 @@ body,html{
 .first{
     height: 100%;
     width: 50%;
+    position: relative;
+
+    .smallcircle{
+        height: 1vw;
+        width: 1vw;
+        border-radius: 50%;
+        background-color: #dadada;
+        position: absolute;
+        right: -0.6vw;
+        top: 50%;
+        transform: translate(0,-50%);
+    }
 
 }
 .second{
     height: 100%;
     width: 50%;
-   padding-left: 25px;
+    padding-left: 25px;
+    
 
    h1{
        font-family:helvetica;
@@ -91,4 +104,29 @@ body,html{
        opacity: 0.5;
         
     }
+
 }
+
+.button-panel{
+    width: 10%;
+    height: 20%;
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translate(0,-50%);
+    display: flex;
+    flex-direction: column;
+    
+    align-items: center;
+    justify-content: space-between;
+
+    .min-circle{
+        width: 1vw;
+        height: 1vw;
+        background-color: black;
+        opacity: 0.2;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+

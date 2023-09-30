@@ -29,8 +29,8 @@ body, html {
   position: absolute;
   top: 50%;
   left: -100vh;
-  transform: translate(0, -50%);
-  border: 3px solid rgba(221, 170, 221, 0.6666666667);
+  transform: translate(0, -50%) rotate(100deg);
+  border: 3px solid #dadada;
 }
 .main .circle .stripe {
   width: 100%;
@@ -62,6 +62,17 @@ body, html {
 .first {
   height: 100%;
   width: 50%;
+  position: relative;
+}
+.first .smallcircle {
+  height: 1vw;
+  width: 1vw;
+  border-radius: 50%;
+  background-color: #dadada;
+  position: absolute;
+  right: -0.6vw;
+  top: 50%;
+  transform: translate(0, -50%);
 }
 
 .second {
@@ -78,4 +89,25 @@ body, html {
   font-family: helvetica;
   font-size: 1vw;
   opacity: 0.5;
+}
+
+.button-panel {
+  width: 10%;
+  height: 20%;
+  position: absolute;
+  right: 4%;
+  top: 50%;
+  transform: translate(0, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.button-panel .min-circle {
+  width: 1vw;
+  height: 1vw;
+  background-color: black;
+  opacity: 0.2;
+  border-radius: 50%;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
